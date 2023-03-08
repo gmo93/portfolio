@@ -1,0 +1,20 @@
+{
+  "name": "officialportfolio",
+  "version": "1.0.0",
+  "description": "My Front End Portfolio",
+  "main": "scripts.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Grant Omohundro",
+  "license": "ISC",
+  "dependencies": {
+    "@sendgrid/mail": "^7.7.0",
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2",
+    "multiparty": "^4.2.3",
+    "nodemailer": "^6.9.1",
+    "nodemon": "^2.0.20"
+  }
+}

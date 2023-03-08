@@ -1,0 +1,264 @@
+* {
+  font-family: arial;
+}
+html {
+  overflow-x: hidden;
+}
+body {
+  background-color: #4589cd;
+  overflow-x: hidden;
+  margin: 0px;
+}
+#navBarContainer {
+  display: inline-flex;
+  justify-content: center;
+  width: 100%;
+  font-family: arial;
+  font-size: 1.3em;
+  position: fixed;
+  background-color: #4589cd;
+  z-index: 15;
+}
+#navBar {
+  display: inline-flex;
+  justify-content: center;
+  color: white;
+  border-bottom: 3px solid #ef4368;
+}
+.menuButton {
+  padding: 20px 8px 10px 8px;
+  font-weight: 600;
+}
+.menuButton:hover {
+  color: #ef4368;
+}
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  width: 100%;
+  left: 0;
+  overflow-x: hidden;
+  position: relative;
+  flex-wrap: wrap;
+}
+#pinkStripe {
+  height: 40vh;
+  background-color: #ef4368;
+  width: 180%;
+  rotate: -30deg;
+  position: absolute;
+  z-index: 5;
+  left: -30;
+  overflow-x: hidden;
+  animation-name: fill;
+  animation-duration: 2s;
+}
+#whiteStripe {
+  height: 44vh;
+  background-color: white;
+  width: 180%;
+  rotate: -30deg;
+  position: absolute;
+  z-index: 4;
+  left: -30;
+  overflow-x: hidden;
+  animation-name: line;
+  animation-duration: 2s;
+}
+#bio {
+  color: white;
+  z-index: 10;
+  display: flex;
+  width: 95%;
+  font-size: 1.1em;
+  margin-right: 0px;
+  opacity: 100%;
+  animation-name: show;
+  animation-duration: 1s;
+}
+#bioInfo {
+  padding: 20px 0px;
+  font-weight: 700;
+  text-align: center;
+  rotate: -30deg;
+  font-size: 2.25em;
+}
+@keyframes show {
+  from {
+    /* margin-right: 100px; */
+    opacity: 0%;
+  }
+  to {
+    /* margin-right: 0px; */
+    opacity: 100%;
+  }
+}
+#floatingCloudOne {
+  z-index: 10;
+  height: 100px;
+  position: absolute;
+  left: 30px;
+  top: 60px;
+  animation-name: oneBounce;
+  animation-duration: 2s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+}
+#floatingCloudTwo {
+  z-index: 5;
+  height: 250px;
+  position: absolute;
+  left: 100px;
+  top: 580px;
+  animation-name: twoBounce;
+  animation-duration: 2s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+}
+#floatingCloudThree {
+  z-index: 5;
+  height: 150px;
+  position: absolute;
+  left: 230px;
+  top: 90px;
+  animation-name: oneBounce;
+  animation-duration: 2s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+}
+@keyframes oneBounce {
+  0% {
+    top: 80px;
+  }
+  50% {
+    top: 90px;
+  }
+  100% {
+    top: 80px;
+  }
+}
+@keyframes twoBounce {
+  0% {
+    top: 600px;
+  }
+  50% {
+    top: 620px;
+  }
+  100% {
+    top: 600px;
+  }
+}
+@keyframes line {
+  from {
+    width: 10%;
+  }
+  to {
+    width: 180%;
+  }
+}
+#skillsContainer {
+  color: white;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.skillLogo {
+  height: 60px;
+}
+.skillImgTitle {
+  display: flex;
+  flex-wrap: wrap;
+  width: 35vw;
+  justify-content: center;
+  padding: 20px 30px;
+}
+#skillsTitle {
+  width: 70%;
+  padding: 20px 5px;
+  text-align: center;
+  background-color: #ef4368;
+  color: white;
+  border-radius: 15px;
+  font-weight: 600;
+  margin-top: 60px;
+}
+#skillsBox {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 0;
+  width: 70vw;
+  height: 60vh;
+}
+.skills {
+  padding: 10px 10px;
+  width: 40vw;
+  text-align: center;
+}
+form {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  width: 50vw;
+  color: white;
+  font-weight: 600;
+}
+#formContainer {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  background-color: #ef4368;
+}
+form input {
+  margin-bottom: 30px;
+}
+#message {
+  height: 20vh;
+}
+#footer {
+  background-color: #4589cd;
+  color: white;
+  height: 20vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  border-top: 10px solid #a32540;
+}
+#contactTitleContainer {
+  color: #ef4368;
+  width: 100vw;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  height: 30vh;
+}
+#contactStripe {
+  height: 15vh;
+  background-color: #ef4368;
+  width: 120%;
+  position: absolute;
+  top: 84px;
+  z-index: 2;
+}
+#contactMeTitle {
+  font-weight: 600;
+  font-size: 3.5em;
+  z-index: 10;
+  color: white;
+  position: relative;
+  text-align: center;
+}
+#submit {
+  margin-top: 30px;
+}
+#formHolder {
+  height: 50vh;
+}

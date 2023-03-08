@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/x-icon" href="officialOmoIconPink.png" />
+    <title>Grant's Portfolio</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <link href="http://fonts.cdnfonts.com/css/whitney-2" rel="stylesheet" />
+    <link rel="stylesheet" href="/styles.css" />
+    <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+  </head>
+  <body>
+    <div id="navBarContainer">
+      <div id="navBar">
+        <h4 class="menuButton">Home</h4>
+        <h4 class="menuButton">About</h4>
+        <h4 class="menuButton">Projects</h4>
+        <h4 class="menuButton">Skills</h4>
+      </div>
+    </div>
+    <img id="floatingCloudOne" src="cloud.svg" />
+    <img id="floatingCloudTwo" src="cloud.svg" />
+    <img id="floatingCloudThree" src="cloud.svg" />
+    <div class="container">
+      <div id="pinkStripe"></div>
+      <div id="whiteStripe"></div>
+      <div id="bio">
+        <h2 id="bioInfo">
+          My name is <br />Grant Omohundro, and I'm a Front End Developer!
+        </h2>
+      </div>
+    </div>
+    <div id="skillsContainer" class="container">
+      <h2 id="skillsTitle">Skills / Languages</h2>
+      <div id="skillsBox">
+        <div class="skillImgTitle">
+          <img class="skillLogo" src="html5IconWhite.png" />
+          <h4 class="skills">HTML</h4>
+        </div>
+        <div class="skillImgTitle">
+          <img class="skillLogo" src="css3IconWhite.png" />
+          <h4 class="skills">CSS / SASS</h4>
+        </div>
+        <div class="skillImgTitle">
+          <img class="skillLogo" src="jsIcon.png" />
+          <h4 class="skills">Javascript</h4>
+        </div>
+        <div class="skillImgTitle">
+          <img class="skillLogo" src="bootstrapIcon.png" />
+          <h4 class="skills">Bootstrap</h4>
+        </div>
+        <div class="skillImgTitle">
+          <img class="skillLogo" src="mongodbIcon.png" />
+          <h4 class="skills">MongoDB</h4>
+        </div>
+        <div class="skillImgTitle">
+          <img class="skillLogo" src="nextJSIcon.png" />
+          <h4 class="skills">NextJS</h4>
+        </div>
+      </div>
+    </div>
+    <div id="formContainer" class="container">
+      <!-- <div id="contactStripe"></div> -->
+      <div id="contactTitleContainer">
+        <h2 id="contactMeTitle">Contact Me!</h2>
+      </div>
+      <div id = "formHolder">
+        <form class="form-horizontal" method="post" action="contact.php">
+          <div class="form-group">
+            <div class="col-sm-12" id="formContainer">
+              <label for="name">Name:</label>
+              <input
+                type="text"
+                class="form-control"
+                id="name"
+                placeholder="NAME"
+                name="name"
+                value=""
+              />
+            </div>
+          </div>
+          <label for="message">Message:</label>
+          <textarea
+            class="form-control"
+            rows="10"
+            id="message"
+            placeholder="MESSAGE"
+            name="message"
+          >
+          </textarea>
+
+          <button
+            class="btn btn-primary send-button"
+            id="submit"
+            type="submit"
+            value="SEND"
+          >
+            <i class="fa fa-paper-plane"></i>
+            <span class="send-text">SEND</span>
+          </button>
+        </form>
+    </div>
+    <!-- <div id="footer">
+      <div id="footerContainer">
+        <h6>Grant Omohundro</h6>
+        <h6>omohundrogrant@yahoo.com</h6>
+      </div>
+    </div> -->
+  </body>
+</html>
